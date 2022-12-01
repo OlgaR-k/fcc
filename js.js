@@ -1,6 +1,22 @@
 
-function checkObj(obj, checkProp) {
-    // Only change code below this line
-    return obj[checkProp] ? obj[checkProp] : "Not Found";
-    // Only change code above this line
-  }
+const names = ["Hole-in-one!", "Eagle", "Birdie", "Par", "Bogey", "Double Bogey", "Go Home!"];
+
+function golfScore(par, strokes) {
+    if (strokes == 1) {
+        return names[0];
+    } else if (par - 2 >= strokes) {
+        return names[1];
+    } else if (par - 1 == strokes) {
+        return names[2];
+    } else if (par == strokes) {
+        return names[3];
+    } else if (par + 1 == strokes) {
+        return names[4];
+    } else if (par + 2 == strokes) {
+        return names[5];
+    } else if (par + 3 <= strokes) {
+        return names[6];
+    }
+}
+
+console.log(golfScore(5, 4));
