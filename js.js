@@ -1,19 +1,18 @@
-function caseInSwitch(val) {
+function switchOfStuff(val) {
     let answer = "";
     // Only change code below this line
-  switch (val) {
-    case 1:
-      answer = 'alpha';
+  switch(val) {
+    case 'a':
+      answer = 'apple';
       break;
-    case 2:
-      answer = 'beta';
+    case 'b':
+      answer = 'bird';
       break;
-    case 3:
-      answer = 'gamma';
+    case 'c':
+      answer = 'cat';
       break;
-    case 4:
-      answer = 'delta';
-      break; 
+    default:
+      answer = 'stuff';
   }
   
   
@@ -21,4 +20,4 @@ function caseInSwitch(val) {
     return answer;
   }
   
-  console.log(caseInSwitch(1));
+  switchOfStuff(1);
