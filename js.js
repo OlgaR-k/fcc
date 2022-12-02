@@ -20,6 +20,11 @@
     <input type="text" placeholder="cat photo URL" required>
     <button type="submit">Submit</button>
 
+  
+  <label for='indoor'><input id='indoor' type='radio' name='indoor-outdoor'>Indoor</label>
+  <label for='indoor'><input id='indoor' type='radio' name='indoor-outdoor'>Outdoor</label>
+
+
 
   </form>
 </main> */}
