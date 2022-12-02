@@ -1,28 +1,11 @@
-function sequentialSizes(val) {
-    let answer = "";
-    // Only change code below this line
+{/* <h2>CatPhotoApp</h2>
+<main>
 
-    switch (val) {
-        case 1:
-        case 2:
-        case 3:
-            answer = 'Low';
-            break;
-        case 4:
-        case 5:
-        case 6:
-            answer = 'Mid';
-            break;
-        case 7:
-        case 8:
-        case 9:
-            answer = 'High';
-            break;
-    }
 
-    // Only change code above this line
-    return answer;
-}
+<a href='https://www.freecatphotoapp.com'>
+  <img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back.">
+</a>
 
-sequentialSizes(1);
-
+  <p>Kitty ipsum dolor sit amet, shed everywhere shed everywhere stretching attack your ankles chase the red dot, hairball run catnip eat the grass sniff.</p>
+  <p>Purr jump eat the grass rip the couch scratched sunbathe, shed everywhere rip the couch sleep in the sink fluffy fur catnip scratched.</p>
+</main> */}
