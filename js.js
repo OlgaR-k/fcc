@@ -17,7 +17,9 @@
     <li>other cats</li>
   </ol>
   <form action="https://www.freecatphotoapp.com/submit-cat-photo">
-    <input type="text" placeholder="cat photo URL">
-    <button type='submit'>Submit </button>
+    <input type="text" placeholder="cat photo URL" required>
+    <button type="submit">Submit</button>
+
+
   </form>
 </main> */}
