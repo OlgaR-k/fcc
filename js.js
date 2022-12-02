@@ -1,30 +1,17 @@
-{/* <h2>CatPhotoApp</h2>
-<main>
-  <p>Click here to view more <a href="#">cat photos</a>.</p>
+function numberJoy(n) {
+    let arr = String(n).split('');
+    let num1 = 0;
+    let num2 = 0;
 
-  <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+    for (i = 0; i < arr.length; i++ ) {
+        num1 += +arr[i];
+    }
+    // console.log(num1);
 
-  <p>Things cats love:</p>
-  <ul>
-    <li>cat nip</li>
-    <li>laser pointers</li>
-    <li>lasagna</li>
-  </ul>
-  <p>Top 3 things cats hate:</p>
-  <ol>
-    <li>flea treatment</li>
-    <li>thunder</li>
-    <li>other cats</li>
-  </ol>
-  <form action="https://www.freecatphotoapp.com/submit-cat-photo">
-    <label for="indoor"><input id="indoor" type="radio" name="indoor-outdoor"> Indoor</label>
-    <label for="outdoor"><input id="outdoor" type="radio" name="indoor-outdoor"> Outdoor</label><br>
-    <input type="text" placeholder="cat photo URL" required>
-    <button type="submit">Submit</button>
+    num2 = +String(num1).split('').reverse().join('');
+    // console.log(num2);
+    return num1 * num2 == n;
+    
+}
 
-<label for='id1'><input id='id1' type='checkbox' name='personality'>id1</label>
-<label for='id2'><input id='id2' type='checkbox' name='personality'>id2</label>
-<label for='id3'><input id='id3' type='checkbox' name='personality'>id3</label>
-
-  </form>
-</main> */}
+console.log(numberJoy(1729));
