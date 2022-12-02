@@ -11,10 +11,11 @@
     <li>lasagna</li>
   </ul>
   <p>Top 3 things cats hate:</p>
-<ol>
-  <li>1</li>
-  <li>1</li>
-  <li>1</li>
-</ol>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
 
+<input type='text'>
 </main> */}
