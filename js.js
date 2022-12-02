@@ -1,23 +1,23 @@
-function solution(number){
-    if (number < 0) {
-      return 0;
-    }
-    
-    let num = new Set();
-    let startNumber = 1;
-    
-    while (startNumber < number ) {
-      if ( (startNumber % 3 == 0) || (startNumber % 5 == 0) ) {
-        num.add(startNumber);
-      }
-      startNumber++;
-    }
-    let sum = 0;
+{/* <h2>CatPhotoApp</h2>
+<main>
+  <p>Click here to view more <a href="#">cat photos</a>.</p>
 
-    for (let val of num) {
-        sum += val;
-      }
-    return sum;
-  }
+  <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
 
-    console.log(solution(10));
+  <p>Things cats love:</p>
+  <ul>
+    <li>cat nip</li>
+    <li>laser pointers</li>
+    <li>lasagna</li>
+  </ul>
+  <p>Top 3 things cats hate:</p>
+  <ol>
+    <li>flea treatment</li>
+    <li>thunder</li>
+    <li>other cats</li>
+  </ol>
+  <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+    <input type="text" placeholder="cat photo URL">
+    <button type='submit'>Submit </button>
+  </form>
+</main> */}
