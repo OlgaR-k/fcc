@@ -1,38 +1,19 @@
-{/* <style>
-  h2 {
-    color: blue;
-  }  
-</style>
+function maxIntChain(n) {
+    if (n < 5) return -1;
 
+    let c = 2;
+    let d = n - c;
+    let rez = -1;
 
-<h2>CatPhotoApp</h2>
-<main>
-  <p>Click here to view more <a href="#">cat photos</a>.</p>
+    while ( c < d ) {
 
-  <a href="#"><img src="https://cdn.freecodecamp.org/curriculum/cat-photo-app/relaxing-cat.jpg" alt="A cute orange cat lying on its back."></a>
+        if (rez < c*d ) {
+            rez = c * d;
+        }
+        c++;
+        d--;
+    }
+    return rez; // an integer
+}
 
-  <div>
-    <p>Things cats love:</p>
-    <ul>
-      <li>cat nip</li>
-      <li>laser pointers</li>
-      <li>lasagna</li>
-    </ul>
-    <p>Top 3 things cats hate:</p>
-    <ol>
-      <li>flea treatment</li>
-      <li>thunder</li>
-      <li>other cats</li>
-    </ol>
-  </div>
-
-  <form action="https://freecatphotoapp.com/submit-cat-photo">
-    <label><input type="radio" name="indoor-outdoor" checked> Indoor</label>
-    <label><input type="radio" name="indoor-outdoor"> Outdoor</label><br>
-    <label><input type="checkbox" name="personality" checked> Loving</label>
-    <label><input type="checkbox" name="personality"> Lazy</label>
-    <label><input type="checkbox" name="personality"> Energetic</label><br>
-    <input type="text" placeholder="cat photo URL" required>
-    <button type="submit">Submit</button>
-  </form>
-</main> */}
+console.log(maxIntChain(26));
