@@ -1,19 +1,11 @@
-function maxIntChain(n) {
-    if (n < 5) return -1;
+function digitalRoot(n) {
+    let rez = n;
 
-    let c = 2;
-    let d = n - c;
-    let rez = -1;
-
-    while ( c < d ) {
-
-        if (rez < c*d ) {
-            rez = c * d;
-        }
-        c++;
-        d--;
+    while (rez >= 10 ) {
+        rez = String(rez).split('').reduce( (sum, current) => sum + +current, 0);
     }
-    return rez; // an integer
-}
 
-console.log(maxIntChain(26));
+    return rez;
+  }
+
+console.log(digitalRoot(942  ));
