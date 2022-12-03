@@ -1,11 +1,17 @@
-function digitalRoot(n) {
-    let rez = n;
+function nextPal(val) {
 
-    while (rez >= 10 ) {
-        rez = String(rez).split('').reduce( (sum, current) => sum + +current, 0);
-    }
+    let num1 = val; 
+    let nextPalindrome = 0;
 
-    return rez;
-  }
+    do {
+        num1++;
+        nextPalindrome = +String(num1).split('').reverse().join('');
 
-console.log(digitalRoot(942  ));
+    } while ( num1 !== nextPalindrome);
+
+    return nextPalindrome;
+}
+
+
+
+console.log(nextPal(188));
