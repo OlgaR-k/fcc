@@ -1,4 +1,6 @@
-{/* <style>
+{/* <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+
+<style>
   .red-text {
     color: red;
   }
@@ -6,6 +8,10 @@
   p {
     font-size: 16px;
     font-family: monospace;
+  }
+
+  h2 {
+    font-family: Lobster;
   }
 </style>
 
